@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link href="style.css" rel="stylesheet" />
+
+    <title>Intro section with dropdown navigation</title>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <header class="header">
+                <div class="header-img-box">
+                    <img class="header-img" src="../intro-section-with-dropdown-navigation-main/images/logo.svg" alt="company-logo"/>
+                </div>
+
+
+                <div class="header-navs">
+                    <ul class="header-nav-links-list">
+                        <li class="header-nav-links-items dropdown dropdown-1">
+                            <div class="header-dropdown-heading-box" onclick="openDropdownBig()">
+                                <span class="header-dropdown-header">Features</span>
+                                <span>
+                                    <img class="header-dropdown-arrow"
+                                        src="../intro-section-with-dropdown-navigation-main/images/icon-arrow-down.svg"
+                                        alt="arrow-down" />
+                                </span>
+                            </div>
+
+                            <div id="bigdropdown" class="header-dropdown-box big hide">
+                                <ul class="header-dropdown-list">
+                                    <li class="header-dropdown-list-items">
+                                        <span>
+                                            <img class="header-dropdown-list-items-icon"
+                                                src="../intro-section-with-dropdown-navigation-main/images/icon-todo.svg" alt="to-do-icon" />
+                                        </span>
+                                        <span class="header-dropdown-list-items-text">To Do List</span>
+                                    </li>
+                                    <li class="header-dropdown-list-items">
+                                        <span>
+                                            <img class="header-dropdown-list-items-icon"
+                                                src="../intro-section-with-dropdown-navigation-main/images/icon-calendar.svg" alt="to-do-icon" />
+                                        </span>
+                                        <span class="header-dropdown-list-items-text">Calender</span>
+                                    </li>
+                                    <li class="header-dropdown-list-items">
+                                        <span>
+                                            <img class="header-dropdown-list-items-icon"
+                                                src="../intro-section-with-dropdown-navigation-main/images/icon-reminders.svg" alt="to-do-icon" />
+                                        </span>
+                                        <span class="header-dropdown-list-items-text">Reminder</span>
+                                    </li>
+                                    <li class="header-dropdown-list-items">
+                                        <span>
+                                            <img class="header-dropdown-list-items-icon"
+                                                src="../intro-section-with-dropdown-navigation-main/images/icon-planning.svg" alt="to-do-icon" />
+                                        </span>
+                                        <span class="header-dropdown-list-items-text">Planning</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="header-nav-links-items dropdown dropdown-2">
+                            <div class="header-dropdown-heading-box" onclick="openDropdownSm()">
+                                <span class="header-dropdown-header">Company</span>
+                                <span>
+                                    <img class="header-dropdown-arrow small"
+                                        src="../intro-section-with-dropdown-navigation-main/images/icon-arrow-down.svg"
+                                        alt="arrow-down" />
+                                </span>
+                            </div>
+                            <div id="smalldropdown" class="header-dropdown-box small hide">
+                                <ul class="header-dropdown-list">
+                                    <li class="header-dropdown-list-items">History</li>
+                                    <li class="header-dropdown-list-items">Our Team</li>
+                                    <li class="header-dropdown-list-items">Blog</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="header-nav-links-items" id="carrer" onclick="closeAllDropdowns()">
+                            <span class="dropdown-header">Careers</span>
+                        </li>
+                        <li class="header-nav-links-items" id="about" onclick="closeAllDropdowns()">
+                            <span class="dropdown-header">About</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="header-nav-buttons">
+                    <button class="header-nav-buttons-btn">Login</button>
+                    <button class="header-nav-buttons-btn btn-2">Register</button>
+                </div>
+
+                <div class="header-nav-icons">
+                    <img src="../intro-section-with-dropdown-navigation-main/images/icon-menu.svg" 
+                    class="menu-icon" 
+                    alt="menu-icon" 
+                    onclick="openSidebar()"/>
+                </div>
+            </header>
+
+            <section class="hero-section">
+                <div class="hero-container">
+                    <div class="hero-text-box">
+                        <h1 class="hero-heading">Make remote work</h1>
+                        <p class="hero-text">
+                            Get your team in sync, no matter your location. Streamline processes,
+                            create team rituals, and watch productivity soar.
+                        </p>
+
+                        <button class="hero-btn">Learn more</button>
+
+                        <div class="clients">
+                            <ul class="clients-list">
+                                <li class="clients-list-items">
+                                    <img class="clients-img" src="../intro-section-with-dropdown-navigation-main/images/client-databiz.svg" />
+                                </li>
+                                <li class="clients-list-items">
+                                    <img class="clients-img" src="../intro-section-with-dropdown-navigation-main/images/client-audiophile.svg" />
+                                </li>
+                                <li class="clients-list-items">
+                                    <img class="clients-img" src="../intro-section-with-dropdown-navigation-main/images/client-meet.svg" />
+                                </li>
+                                <li class="clients-list-items">
+                                    <img class="clients-img" src="../intro-section-with-dropdown-navigation-main/images/client-maker.svg" />
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="hero-img-box">
+                        <img class="hero-img-mobile" src="../intro-section-with-dropdown-navigation-main/images/image-hero-mobile.png"
+                            alt="man-working-on-laptop" />
+                        <img class="hero-img-desktop" src="../intro-section-with-dropdown-navigation-main/images/image-hero-desktop.png"
+                            alt="man-working-on-laptop" />
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <div class="transparent-bg hide" id="transbg" onclick="closeSidebar()"></div>
+
+    <div class="sidebar-nav hide" id="sidebar">
+        <div class="sidebar-close-icon-box">
+            <img src="../intro-section-with-dropdown-navigation-main/images/icon-close-menu.svg" 
+            class="sidebar-icon-close"
+            alt="menu-close-icon" 
+            onclick="closeSidebar()"/>
+        </div>
+        <div class="sidebar-nav-links">
+            <ul class="sidebar-nav-links-list">
+                <li class="sidebar-nav-links-items dropdown">
+                    <div class="sidebar-dropdown-heading-box big" onclick="openSidebarDropdown()">
+                        <span class="sidebar-dropdown-header">Features</span>
+                        <span>
+                            <img class="sidebar-dropdown-arrow" id="sidebardropdownarrow1" 
+                            src="../intro-section-with-dropdown-navigation-main/images/icon-arrow-down.svg"
+                            alt="arrow-down" />
+                        </span>
+                    </div>
+
+                    <div class="sidebar-dropdown-box hide" id="sidebardropdownbox">
+                        <ul class="sidebar-dropdown-list">
+                            <li class="sidebar-dropdown-list-items">
+                                <span>
+                                    <img class="sidebar-dropdown-list-items-icon"
+                                        src="../intro-section-with-dropdown-navigation-main/images/icon-todo.svg" alt="to-do-icon" />
+                                </span>
+                                <span class="sidebar-dropdown-list-items-text">To Do List</span>
+                            </li>
+                            <li class="sidebar-dropdown-list-items">
+                                <span>
+                                    <img class="sidebar-dropdown-list-items-icon"
+                                        src="../intro-section-with-dropdown-navigation-main/images/icon-calendar.svg" alt="to-do-icon" />
+                                </span>
+                                <span class="sidebar-dropdown-list-items-text">Calender</span>
+                            </li>
+                            <li class="sidebar-dropdown-list-items">
+                                <span>
+                                    <img class="sidebar-dropdown-list-items-icon"
+                                        src="../intro-section-with-dropdown-navigation-main/images/icon-reminders.svg" alt="to-do-icon" />
+                                </span>
+                                <span class="sidebar-dropdown-list-items-text">Reminder</span>
+                            </li>
+                            <li class="sidebar-dropdown-list-items">
+                                <span>
+                                    <img class="sidebar-dropdown-list-items-icon"
+                                        src="../intro-section-with-dropdown-navigation-main/images/icon-planning.svg" alt="to-do-icon" />
+                                </span>
+                                <span class="sidebar-dropdown-list-items-text">Planning</span>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="sidebar-nav-links-items dropdown">
+                    <div class="sidebar-dropdown-heading-box" onclick="openSidebarDropdown2()">
+                        <span class="sidebar-dropdown-header">Company</span>
+                        <span>
+                            <img class="sidebar-dropdown-arrow" id="sidebardropdownarrow2" 
+                            src="../intro-section-with-dropdown-navigation-main/images/icon-arrow-down.svg"
+                            alt="arrow-down" />
+                        </span>
+                    </div>
+                    <div class="sidebar-dropdown-box hide" id="sidebardropdownbox2">
+                        <ul class="sidebar-dropdown-list">
+                            <li class="sidebar-dropdown-list">History</li>
+                            <li class="sidebar-dropdown-list">Our Team</li>
+                            <li class="sidebar-dropdown-list">Blog</li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="sidebar-header-nav-links-items">
+                    <span class="sidebar-dropdown-header" onclick="closeAllDropdowns()">Careers</span>
+                </li>
+                <li class="sidebar-header-nav-links-items">
+                    <span class="sidebar-dropdown-header" onclick="closeAllDropdowns()">About</span>
+                </li>
+            </ul>
+
+            <div class="sidebar-nav-buttons">
+                <button class="sidebar-nav-buttons-btn" onclick="closeAllDropdowns()">Login</button>
+                <button class="sidebar-nav-buttons-btn btn-border" onclick="closeAllDropdowns()" onclick="closeSidebar()">Register</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
